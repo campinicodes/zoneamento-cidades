@@ -1,4 +1,4 @@
-# Plataforma de zoneamento multicidades – parâmetros urbanísticos para MCMV (squad STAR / Tenda)
+# Plataforma de zoneamento multicidades – parâmetros urbanísticos para MCMV
 
 Este pacote traz **um JSON normalizado por cidade**, todos com a mesma estrutura (JSON Schema 1.1). Os dados vêm só de fontes oficiais públicas, e cada valor tem citação (lei, artigo/anexo, URL). Junto vêm um motor genérico de consulta por polígono e uma app Flask de exemplo. O conteúdo foi levantado em 27/10/2026.
 O resultado é **indicativo**. Confirme sempre na prefeitura (consulta prévia / certidão de uso do solo) antes de qualquer decisão.
