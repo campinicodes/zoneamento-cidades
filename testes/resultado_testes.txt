@@ -1,0 +1,18 @@
+OK    test_cg_centro_z1
+OK    test_cg_taruma_zeis2
+OK    test_cg_kmz_ea1
+OK    test_kmz_varios_poligonos_varias_cidades
+OK    test_ficticia_base_simples_e_utm_calculada
+OK    test_ficticia_substitui
+OK    test_ficticia_substitui_abaixo_do_limiar
+OK    test_ficticia_usa_indices_de_com_mantem_da_base
+OK    test_ficticia_eixo_requer_testada
+OK    test_ficticia_apenas_alerta_e_restricao
+OK    test_ficticia_divisa_e_multiplas_bases
+OK    test_fora_das_cidades_e_cidade_forcada
+OK    test_validador
+OK    test_schema_e_normalizador
+OK    test_herda_da_base
+OK    test_rotas
+
+0 falha(s)

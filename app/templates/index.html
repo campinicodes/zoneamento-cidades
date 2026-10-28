@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Zoneamento multicidades – consulta por polígono</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.js"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+</head>
+<body>
+<div id="mapa"></div>
+<aside id="painel">
+  <h2>Zoneamento – plataforma multicidades</h2>
+  <div class="linha">
+    <label>Cidade
+      <select id="cidade"><option value="">Detectar automaticamente</option></select>
+    </label>
+    <a id="link-ref" href="#" target="_blank" class="pequeno">referências e lacunas</a>
+  </div>
+  <p class="nota">Desenhe um ou mais polígonos (⬟/▭ à esquerda) ou envie KML/KMZ/GeoJSON – todos os polígonos do arquivo são analisados.
+     A cidade é detectada pelo centróide de cada polígono.</p>
+  <form id="form-arq">
+    <input type="file" id="arquivo" accept=".kml,.kmz,.geojson,.json">
+    <button type="submit">Consultar arquivo</button>
+  </form>
+  <div class="linha">
+    <label><input type="checkbox" id="ver-zonas"> mostrar zonas</label>
+    <button id="limpar" type="button">limpar</button>
+    <button id="baixar" type="button" disabled>⬇ baixar resultado (JSON)</button>
+  </div>
+  <details id="status-cidades" open>
+    <summary>Cidades cadastradas – status dos dados</summary>
+    <div id="tabela-status"><p class="nota">carregando…</p></div>
+    <p class="nota">Geometria oficial = % da área das zonas base vinda de vetor oficial (o resto é digitalização aproximada de mapa oficial). Erro = erro posicional estimado declarado (– = vetor oficial sem erro declarado) em <code>geografico.camadas</code>.</p>
+  </details>
+  <div id="resultado"><p class="nota">Nenhuma consulta ainda.</p></div>
+</aside>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

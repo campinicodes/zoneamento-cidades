@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Referências – {{ cidade.municipio }}/{{ cidade.uf }}</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+</head>
+<body class="doc">
+<p><a href="/">← voltar ao mapa</a> · <a href="/api/validar/{{ cidade.slug }}" target="_blank">relatório do validador (JSON)</a></p>
+{% if cidade.exemplo_ficticio %}<div class="alerta">DADO FICTÍCIO DE EXEMPLO – cidade usada só para testes.</div>{% endif %}
+<h1 class="sub">Lacunas declaradas no JSON ({{ lacunas|length }})</h1>
+<p class="nota">Itens sem fonte oficial localizada: ficaram <code>null</code> no JSON (nunca estimados).</p>
+<ul>{% for l in lacunas %}<li><b>{{ l.item if l is mapping else l }}</b>{% if l is mapping and l.motivo %}: {{ l.motivo }}{% endif %}</li>{% endfor %}</ul>
+{% if avisos %}<h1 class="sub">Avisos do validador</h1><ul>{% for a in avisos %}<li>{{ a }}</li>{% endfor %}</ul>{% endif %}
+<hr>
+{{ corpo|safe }}
+</body>
+</html>

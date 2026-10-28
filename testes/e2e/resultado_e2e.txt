@@ -1,0 +1,12 @@
+OK  campo-grande-ms    zona-alvo=Z4           (mista_media_densidade      ) detectada=campo-grande-ms base=Z4 aplicável=Z4 CAmáx=3/unico alertas=1 | 1ª=109 ms, 2ª=13 ms, 3ª=12 ms
+OK  curitiba-pr        zona-alvo=ZFR          (mista_media_densidade      ) detectada=curitiba-pr base=ZFR aplicável=ZFR CAmáx=2/unico alertas=1 | 1ª=214 ms, 2ª=14 ms, 3ª=14 ms
+OK  fortaleza-ce       zona-alvo=ZOP1         (mista_media_densidade      ) detectada=fortaleza-ce base=ZOP1 aplicável=ZOP1 CAmáx=3.0/unico alertas=3 | 1ª=277 ms, 2ª=12 ms, 3ª=12 ms
+OK  goiania-go         zona-alvo=AAB          (residencial_media_densidade) detectada=goiania-go base=AAB aplicável=AAB CAmáx=None/condicional alertas=4 | 1ª=505 ms, 2ª=18 ms, 3ª=17 ms
+OK  joao-pessoa-pb     zona-alvo=ZCS-5        (mista_media_densidade      ) detectada=joao-pessoa-pb base=ZCS-5 aplicável=ZCS-5 CAmáx=None/condicional alertas=7 | 1ª=651 ms, 2ª=18 ms, 3ª=17 ms
+OK  porto-alegre-rs    zona-alvo=D11-A3-IA11-V15 (mista_media_densidade      ) detectada=porto-alegre-rs base=D11-A3-IA11-V15 aplicável=D11-A3-IA11-V15 CAmáx=3.0/unico alertas=4 | 1ª=469 ms, 2ª=16 ms, 3ª=16 ms
+OK  recife-pe          zona-alvo=ZDS-BEBERIBE (mista_media_densidade      ) detectada=recife-pe base=ZDS-BEBERIBE aplicável=ZDS-BEBERIBE CAmáx=2/unico alertas=2 | 1ª=73 ms, 2ª=13 ms, 3ª=13 ms
+OK  rio-de-janeiro-rj  zona-alvo=ZUM B | AP4  (mista_media_densidade      ) detectada=rio-de-janeiro-rj base=ZUM B | AP4 aplicável=ZUM B | AP4 CAmáx=2.0/unico alertas=4 | 1ª=1085 ms, 2ª=22 ms, 3ª=20 ms
+OK  salvador-ba        zona-alvo=ZPR-2        (residencial_media_densidade) detectada=salvador-ba base=ZPR-2 aplicável=ZPR-2 CAmáx=2.0/unico alertas=2 | 1ª=400 ms, 2ª=15 ms, 3ª=13 ms
+OK  KMZ 4 polígonos (3 cidades + 1 fora) → ['curitiba-pr', 'rio-de-janeiro-rj', 'salvador-ba', 'ERRO:Polígono fora das cidades cadastradas: c'] em 38 ms
+
+0 falha(s)

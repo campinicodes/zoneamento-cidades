@@ -1,0 +1,1139 @@
+{
+ "schema_versao": "1.1",
+ "exemplo_ficticio": true,
+ "aviso": "DADO FICTÍCIO DE EXEMPLO – cidade inexistente usada apenas nos testes automatizados da plataforma.",
+ "municipio": "Cidade Exemplo (FICTÍCIA)",
+ "uf": "XX",
+ "slug": "cidade-exemplo-xx",
+ "codigo_ibge": "0000000",
+ "data_levantamento": "2026-10-27",
+ "centro_mapa": {
+  "lat": -10.0,
+  "lon": -32.98,
+  "zoom": 14
+ },
+ "orgao_confirmacao": "Prefeitura FICTÍCIA (exemplo)",
+ "marco_legal_vigente": "Lei fictícia 1/2000 – DADO FICTÍCIO DE EXEMPLO",
+ "fontes": [
+  {
+   "id": "FX1",
+   "titulo": "DADO FICTÍCIO DE EXEMPLO",
+   "lei": "Lei fictícia n. 1/2000",
+   "data": "2000-01-01",
+   "url": "https://example.org/lei-ficticia"
+  }
+ ],
+ "macrozonas": [
+  {
+   "codigo": "M1",
+   "nome": "Macrozona fictícia",
+   "descricao": "DADO FICTÍCIO DE EXEMPLO",
+   "parametros": {}
+  }
+ ],
+ "zonas": [
+  {
+   "codigo": "ZB1",
+   "nome": "Zona base 1 (FICTÍCIA)",
+   "descricao": "DADO FICTÍCIO DE EXEMPLO",
+   "tipo": "base",
+   "prioridade": 0,
+   "categoria_normalizada": "mista_media_densidade",
+   "categoria_criterio": "DADO FICTÍCIO DE EXEMPLO",
+   "regra_sobreposicao": null,
+   "parametros": {
+    "ca_minimo": null,
+    "ca_basico": {
+     "valor": 1.0,
+     "unidade": "coeficiente",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": null,
+     "forma": "unico"
+    },
+    "ca_maximo": {
+     "valor": 2.0,
+     "unidade": "coeficiente",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": null,
+     "forma": "unico"
+    },
+    "taxa_ocupacao": {
+     "valor": 0.6,
+     "unidade": "fracao",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": null,
+     "forma": "unico"
+    },
+    "gabarito_altura_max_m": null,
+    "gabarito_pavimentos": null,
+    "taxa_permeabilidade": {
+     "valor": 0.1,
+     "unidade": "fracao",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": null,
+     "forma": "unico"
+    },
+    "recuos": {
+     "frontal": {
+      "valor": 5,
+      "unidade": "m",
+      "fonte_id": "FX1",
+      "artigo_anexo": "art. 1º (fictício)",
+      "observacao": null,
+      "forma": "unico"
+     },
+     "lateral": null,
+     "fundos": null
+    },
+    "lote_minimo_m2": {
+     "valor": 200,
+     "unidade": "m2",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": null,
+     "forma": "unico"
+    },
+    "testada_minima_m": null,
+    "usos_permitidos": {
+     "valor": [
+      "R1",
+      "R2"
+     ],
+     "unidade": "codigos_de_uso",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": "usos fictícios",
+     "forma": "lista"
+    },
+    "vagas": null,
+    "densidade": null,
+    "outros": {
+     "fator_x": {
+      "valor": 1.0,
+      "unidade": "coeficiente",
+      "fonte_id": "FX1",
+      "artigo_anexo": "art. 9º (fictício)",
+      "observacao": null,
+      "forma": "unico"
+     }
+    }
+   },
+   "observacoes": [
+    "DADO FICTÍCIO DE EXEMPLO"
+   ],
+   "geometria": {
+    "type": "FeatureCollection",
+    "crs": "EPSG:4326",
+    "fonte": "DADO FICTÍCIO DE EXEMPLO",
+    "oficial": false,
+    "features": [
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo": "ZB1",
+       "bairro": "Bairro Oeste"
+      },
+      "geometry": {
+       "type": "Polygon",
+       "coordinates": [
+        [
+         [
+          -33.0,
+          -10.01
+         ],
+         [
+          -32.98,
+          -10.01
+         ],
+         [
+          -32.98,
+          -9.99
+         ],
+         [
+          -33.0,
+          -9.99
+         ],
+         [
+          -33.0,
+          -10.01
+         ]
+        ]
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "codigo": "ZB2",
+   "nome": "Zona base 2 (FICTÍCIA)",
+   "descricao": "DADO FICTÍCIO DE EXEMPLO",
+   "tipo": "base",
+   "prioridade": 0,
+   "categoria_normalizada": "mista_media_densidade",
+   "categoria_criterio": "DADO FICTÍCIO DE EXEMPLO",
+   "regra_sobreposicao": null,
+   "parametros": {
+    "ca_minimo": null,
+    "ca_basico": {
+     "valor": 0.5,
+     "unidade": "coeficiente",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": null,
+     "forma": "unico"
+    },
+    "ca_maximo": {
+     "valor": 1.0,
+     "unidade": "coeficiente",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": null,
+     "forma": "unico"
+    },
+    "taxa_ocupacao": {
+     "valor": 0.5,
+     "unidade": "fracao",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": null,
+     "forma": "unico"
+    },
+    "gabarito_altura_max_m": null,
+    "gabarito_pavimentos": null,
+    "taxa_permeabilidade": {
+     "valor": 0.1,
+     "unidade": "fracao",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": null,
+     "forma": "unico"
+    },
+    "recuos": {
+     "frontal": {
+      "valor": 5,
+      "unidade": "m",
+      "fonte_id": "FX1",
+      "artigo_anexo": "art. 1º (fictício)",
+      "observacao": null,
+      "forma": "unico"
+     },
+     "lateral": null,
+     "fundos": null
+    },
+    "lote_minimo_m2": {
+     "valor": 200,
+     "unidade": "m2",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": null,
+     "forma": "unico"
+    },
+    "testada_minima_m": null,
+    "usos_permitidos": {
+     "valor": [
+      "R1",
+      "R2"
+     ],
+     "unidade": "codigos_de_uso",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": "usos fictícios",
+     "forma": "lista"
+    },
+    "vagas": null,
+    "densidade": null,
+    "outros": {
+     "fator_x": {
+      "valor": 2.0,
+      "unidade": "coeficiente",
+      "fonte_id": "FX1",
+      "artigo_anexo": "art. 9º (fictício)",
+      "observacao": null,
+      "forma": "unico"
+     }
+    }
+   },
+   "observacoes": [
+    "DADO FICTÍCIO DE EXEMPLO"
+   ],
+   "geometria": {
+    "type": "FeatureCollection",
+    "crs": "EPSG:4326",
+    "fonte": "DADO FICTÍCIO DE EXEMPLO",
+    "oficial": false,
+    "features": [
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo": "ZB2",
+       "bairro": "Bairro Leste"
+      },
+      "geometry": {
+       "type": "Polygon",
+       "coordinates": [
+        [
+         [
+          -32.98,
+          -10.01
+         ],
+         [
+          -32.96,
+          -10.01
+         ],
+         [
+          -32.96,
+          -9.99
+         ],
+         [
+          -32.98,
+          -9.99
+         ],
+         [
+          -32.98,
+          -10.01
+         ]
+        ]
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "codigo": "ZS-SUB",
+   "nome": "Sobreposta que substitui (FICTÍCIA)",
+   "descricao": "DADO FICTÍCIO DE EXEMPLO",
+   "tipo": "sobreposta",
+   "prioridade": 20,
+   "categoria_normalizada": "outra",
+   "categoria_criterio": "DADO FICTÍCIO DE EXEMPLO",
+   "regra_sobreposicao": {
+    "efeito": "substitui",
+    "usa_indices_de": null,
+    "aplica_sobre": null,
+    "limiar_pct": 50,
+    "requer_testada": false,
+    "distancia_max_m": null,
+    "fundamento": "Lei fictícia 1/2000 (FX1)",
+    "alerta": "Na porção sobreposta vale ZS-SUB."
+   },
+   "parametros": {
+    "ca_minimo": null,
+    "ca_basico": {
+     "valor": 3.0,
+     "unidade": "coeficiente",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": null,
+     "forma": "unico"
+    },
+    "ca_maximo": {
+     "valor": 4.0,
+     "unidade": "coeficiente",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": null,
+     "forma": "unico"
+    },
+    "taxa_ocupacao": {
+     "valor": 0.8,
+     "unidade": "fracao",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": null,
+     "forma": "unico"
+    },
+    "gabarito_altura_max_m": null,
+    "gabarito_pavimentos": null,
+    "taxa_permeabilidade": null,
+    "recuos": {
+     "frontal": {
+      "valor": 5,
+      "unidade": "m",
+      "fonte_id": "FX1",
+      "artigo_anexo": "art. 1º (fictício)",
+      "observacao": null,
+      "forma": "unico"
+     },
+     "lateral": null,
+     "fundos": null
+    },
+    "lote_minimo_m2": {
+     "valor": 200,
+     "unidade": "m2",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": null,
+     "forma": "unico"
+    },
+    "testada_minima_m": null,
+    "usos_permitidos": {
+     "valor": [
+      "R1",
+      "R2"
+     ],
+     "unidade": "codigos_de_uso",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": "usos fictícios",
+     "forma": "lista"
+    },
+    "vagas": null,
+    "densidade": null,
+    "outros": {
+     "fator_x": {
+      "valor": 0.5,
+      "unidade": "coeficiente",
+      "fonte_id": "FX1",
+      "artigo_anexo": "art. 9º (fictício)",
+      "observacao": null,
+      "forma": "unico"
+     }
+    }
+   },
+   "observacoes": [
+    "DADO FICTÍCIO DE EXEMPLO"
+   ],
+   "geometria": {
+    "type": "FeatureCollection",
+    "crs": "EPSG:4326",
+    "fonte": "DADO FICTÍCIO DE EXEMPLO",
+    "oficial": false,
+    "features": [
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo": "ZS-SUB",
+       "identificador": "ZS-SUB 1"
+      },
+      "geometry": {
+       "type": "Polygon",
+       "coordinates": [
+        [
+         [
+          -32.995,
+          -10.005
+         ],
+         [
+          -32.99,
+          -10.005
+         ],
+         [
+          -32.99,
+          -10.0
+         ],
+         [
+          -32.995,
+          -10.0
+         ],
+         [
+          -32.995,
+          -10.005
+         ]
+        ]
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "codigo": "ZS-IDX",
+   "nome": "Sobreposta que troca índices (FICTÍCIA)",
+   "descricao": "DADO FICTÍCIO DE EXEMPLO",
+   "tipo": "sobreposta",
+   "prioridade": 5,
+   "categoria_normalizada": "outra",
+   "categoria_criterio": "DADO FICTÍCIO DE EXEMPLO",
+   "regra_sobreposicao": {
+    "efeito": "usa_indices_de",
+    "usa_indices_de": "ZB1",
+    "aplica_sobre": [
+     "ZB2"
+    ],
+    "limiar_pct": 50,
+    "requer_testada": false,
+    "distancia_max_m": null,
+    "fundamento": "Lei fictícia 1/2000 (FX1)",
+    "alerta": "Sobre ZB2 valem os índices da ZB1 (fator_x mantido da ZB2).",
+    "mantem_da_base": [
+     "outros.fator_x"
+    ]
+   },
+   "parametros": {
+    "ca_minimo": null,
+    "ca_basico": {
+     "valor": null,
+     "unidade": "coeficiente",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": null,
+     "forma": "sem_dado"
+    },
+    "ca_maximo": {
+     "valor": null,
+     "unidade": "coeficiente",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": null,
+     "forma": "sem_dado"
+    },
+    "taxa_ocupacao": {
+     "valor": null,
+     "unidade": "fracao",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": null,
+     "forma": "sem_dado"
+    },
+    "gabarito_altura_max_m": null,
+    "gabarito_pavimentos": null,
+    "taxa_permeabilidade": null,
+    "recuos": {
+     "frontal": {
+      "valor": 5,
+      "unidade": "m",
+      "fonte_id": "FX1",
+      "artigo_anexo": "art. 1º (fictício)",
+      "observacao": null,
+      "forma": "unico"
+     },
+     "lateral": null,
+     "fundos": null
+    },
+    "lote_minimo_m2": {
+     "valor": 200,
+     "unidade": "m2",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": null,
+     "forma": "unico"
+    },
+    "testada_minima_m": null,
+    "usos_permitidos": {
+     "valor": [
+      "R1",
+      "R2"
+     ],
+     "unidade": "codigos_de_uso",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": "usos fictícios",
+     "forma": "lista"
+    },
+    "vagas": null,
+    "densidade": null,
+    "outros": {
+     "fator_x": {
+      "valor": null,
+      "unidade": "coeficiente",
+      "fonte_id": "FX1",
+      "artigo_anexo": "art. 9º (fictício)",
+      "observacao": null,
+      "forma": "sem_dado"
+     }
+    }
+   },
+   "observacoes": [
+    "DADO FICTÍCIO DE EXEMPLO"
+   ],
+   "geometria": {
+    "type": "FeatureCollection",
+    "crs": "EPSG:4326",
+    "fonte": "DADO FICTÍCIO DE EXEMPLO",
+    "oficial": false,
+    "features": [
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo": "ZS-IDX",
+       "identificador": "ZS-IDX A"
+      },
+      "geometry": {
+       "type": "Polygon",
+       "coordinates": [
+        [
+         [
+          -32.975,
+          -10.005
+         ],
+         [
+          -32.965,
+          -10.005
+         ],
+         [
+          -32.965,
+          -9.995
+         ],
+         [
+          -32.975,
+          -9.995
+         ],
+         [
+          -32.975,
+          -10.005
+         ]
+        ]
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "codigo": "ZS-ALERTA",
+   "nome": "Sobreposta só de alerta (FICTÍCIA)",
+   "descricao": "DADO FICTÍCIO DE EXEMPLO",
+   "tipo": "sobreposta",
+   "prioridade": 1,
+   "categoria_normalizada": "outra",
+   "categoria_criterio": "DADO FICTÍCIO DE EXEMPLO",
+   "regra_sobreposicao": {
+    "efeito": "apenas_alerta",
+    "usa_indices_de": null,
+    "aplica_sobre": null,
+    "limiar_pct": null,
+    "requer_testada": false,
+    "distancia_max_m": null,
+    "fundamento": "Lei fictícia 1/2000 (FX1)",
+    "alerta": "Área de atenção fictícia."
+   },
+   "parametros": {
+    "ca_minimo": null,
+    "ca_basico": {
+     "valor": null,
+     "unidade": "coeficiente",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": null,
+     "forma": "sem_dado"
+    },
+    "ca_maximo": {
+     "valor": null,
+     "unidade": "coeficiente",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": null,
+     "forma": "sem_dado"
+    },
+    "taxa_ocupacao": {
+     "valor": null,
+     "unidade": "fracao",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": null,
+     "forma": "sem_dado"
+    },
+    "gabarito_altura_max_m": null,
+    "gabarito_pavimentos": null,
+    "taxa_permeabilidade": null,
+    "recuos": {
+     "frontal": {
+      "valor": 5,
+      "unidade": "m",
+      "fonte_id": "FX1",
+      "artigo_anexo": "art. 1º (fictício)",
+      "observacao": null,
+      "forma": "unico"
+     },
+     "lateral": null,
+     "fundos": null
+    },
+    "lote_minimo_m2": {
+     "valor": 200,
+     "unidade": "m2",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": null,
+     "forma": "unico"
+    },
+    "testada_minima_m": null,
+    "usos_permitidos": {
+     "valor": [
+      "R1",
+      "R2"
+     ],
+     "unidade": "codigos_de_uso",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": "usos fictícios",
+     "forma": "lista"
+    },
+    "vagas": null,
+    "densidade": null,
+    "outros": {
+     "fator_x": {
+      "valor": null,
+      "unidade": "coeficiente",
+      "fonte_id": "FX1",
+      "artigo_anexo": "art. 9º (fictício)",
+      "observacao": null,
+      "forma": "sem_dado"
+     }
+    }
+   },
+   "observacoes": [
+    "DADO FICTÍCIO DE EXEMPLO"
+   ],
+   "geometria": {
+    "type": "FeatureCollection",
+    "crs": "EPSG:4326",
+    "fonte": "DADO FICTÍCIO DE EXEMPLO",
+    "oficial": false,
+    "features": [
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo": "ZS-ALERTA"
+      },
+      "geometry": {
+       "type": "Polygon",
+       "coordinates": [
+        [
+         [
+          -32.999,
+          -10.009
+         ],
+         [
+          -32.996,
+          -10.009
+         ],
+         [
+          -32.996,
+          -10.006
+         ],
+         [
+          -32.999,
+          -10.006
+         ],
+         [
+          -32.999,
+          -10.009
+         ]
+        ]
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "codigo": "EX1",
+   "nome": "Eixo fictício (FICTÍCIA)",
+   "descricao": "DADO FICTÍCIO DE EXEMPLO",
+   "tipo": "eixo",
+   "prioridade": 10,
+   "categoria_normalizada": "eixo",
+   "categoria_criterio": "DADO FICTÍCIO DE EXEMPLO",
+   "regra_sobreposicao": {
+    "efeito": "substitui",
+    "usa_indices_de": null,
+    "aplica_sobre": null,
+    "limiar_pct": null,
+    "requer_testada": true,
+    "distancia_max_m": 40,
+    "fundamento": "Lei fictícia 1/2000 (FX1)",
+    "alerta": "Só com testada para a via."
+   },
+   "parametros": {
+    "ca_minimo": null,
+    "ca_basico": {
+     "valor": 2.0,
+     "unidade": "coeficiente",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": null,
+     "forma": "unico"
+    },
+    "ca_maximo": {
+     "valor": 3.0,
+     "unidade": "coeficiente",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": null,
+     "forma": "unico"
+    },
+    "taxa_ocupacao": {
+     "valor": 0.7,
+     "unidade": "fracao",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": null,
+     "forma": "unico"
+    },
+    "gabarito_altura_max_m": null,
+    "gabarito_pavimentos": null,
+    "taxa_permeabilidade": null,
+    "recuos": {
+     "frontal": {
+      "valor": 5,
+      "unidade": "m",
+      "fonte_id": "FX1",
+      "artigo_anexo": "art. 1º (fictício)",
+      "observacao": null,
+      "forma": "unico"
+     },
+     "lateral": null,
+     "fundos": null
+    },
+    "lote_minimo_m2": {
+     "valor": 200,
+     "unidade": "m2",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": null,
+     "forma": "unico"
+    },
+    "testada_minima_m": null,
+    "usos_permitidos": {
+     "valor": [
+      "R1",
+      "R2"
+     ],
+     "unidade": "codigos_de_uso",
+     "fonte_id": "FX1",
+     "artigo_anexo": "art. 1º (fictício)",
+     "observacao": "usos fictícios",
+     "forma": "lista"
+    },
+    "vagas": null,
+    "densidade": null,
+    "outros": {
+     "fator_x": {
+      "valor": 0.25,
+      "unidade": "coeficiente",
+      "fonte_id": "FX1",
+      "artigo_anexo": "art. 9º (fictício)",
+      "observacao": null,
+      "forma": "unico"
+     }
+    }
+   },
+   "observacoes": [
+    "DADO FICTÍCIO DE EXEMPLO"
+   ],
+   "geometria": {
+    "type": "FeatureCollection",
+    "crs": "EPSG:4326",
+    "fonte": "DADO FICTÍCIO DE EXEMPLO",
+    "oficial": false,
+    "features": [
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo": "EX1",
+       "nome": "Avenida fictícia"
+      },
+      "geometry": {
+       "type": "LineString",
+       "coordinates": [
+        [
+         -33.0,
+         -9.995
+        ],
+        [
+         -32.985,
+         -9.995
+        ]
+       ]
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "camadas_complementares": {
+  "perm": {
+   "papel": "permeabilidade",
+   "descricao": "DADO FICTÍCIO DE EXEMPLO",
+   "fonte": "DADO FICTÍCIO DE EXEMPLO",
+   "oficial": false,
+   "fonte_id": "FX1",
+   "artigo_anexo": "art. 5º (fictício)",
+   "parametros_por_codigo": {
+    "P1": {
+     "taxa_permeabilidade": {
+      "valor": 0.15,
+      "unidade": "fracao",
+      "fonte_id": "FX1",
+      "artigo_anexo": "art. 5º (fictício)",
+      "observacao": null,
+      "forma": "unico"
+     }
+    },
+    "P2": {
+     "taxa_permeabilidade": {
+      "valor": 0.3,
+      "unidade": "fracao",
+      "fonte_id": "FX1",
+      "artigo_anexo": "art. 5º (fictício)",
+      "observacao": null,
+      "forma": "unico"
+     }
+    }
+   },
+   "features": [
+    {
+     "type": "Feature",
+     "properties": {
+      "codigo": "P1"
+     },
+     "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         -33.0,
+         -10.01
+        ],
+        [
+         -32.98,
+         -10.01
+        ],
+        [
+         -32.98,
+         -9.99
+        ],
+        [
+         -33.0,
+         -9.99
+        ],
+        [
+         -33.0,
+         -10.01
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "codigo": "P2"
+     },
+     "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         -32.98,
+         -10.01
+        ],
+        [
+         -32.96,
+         -10.01
+        ],
+        [
+         -32.96,
+         -9.99
+        ],
+        [
+         -32.98,
+         -9.99
+        ],
+        [
+         -32.98,
+         -10.01
+        ]
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  "macro": {
+   "papel": "macrozona",
+   "descricao": "DADO FICTÍCIO DE EXEMPLO",
+   "fonte": "DADO FICTÍCIO DE EXEMPLO",
+   "oficial": false,
+   "parametros_por_codigo": {
+    "M1": {
+     "densidade_max_hab_ha": {
+      "valor": 200,
+      "unidade": "hab/ha",
+      "fonte_id": "FX1",
+      "artigo_anexo": "art. 3º (fictício)",
+      "observacao": null,
+      "forma": "unico"
+     }
+    }
+   },
+   "features": [
+    {
+     "type": "Feature",
+     "properties": {
+      "codigo": "M1"
+     },
+     "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         -33.0,
+         -10.01
+        ],
+        [
+         -32.96,
+         -10.01
+        ],
+        [
+         -32.96,
+         -9.99
+        ],
+        [
+         -33.0,
+         -9.99
+        ],
+        [
+         -33.0,
+         -10.01
+        ]
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  "restr": {
+   "papel": "restricao",
+   "descricao": "Restrição fictícia",
+   "fonte": "DADO FICTÍCIO DE EXEMPLO",
+   "oficial": false,
+   "parametros_por_codigo": null,
+   "fonte_id": "FX1",
+   "artigo_anexo": "art. 7º (fictício)",
+   "alerta_por_codigo": {
+    "R1": "R1 fictícia: área não edificável."
+   },
+   "features": [
+    {
+     "type": "Feature",
+     "properties": {
+      "codigo": "R1"
+     },
+     "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         -32.988,
+         -10.008
+        ],
+        [
+         -32.986,
+         -10.008
+        ],
+        [
+         -32.986,
+         -10.006
+        ],
+        [
+         -32.988,
+         -10.006
+        ],
+        [
+         -32.988,
+         -10.008
+        ]
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  "info": {
+   "papel": "informativa",
+   "descricao": "DADO FICTÍCIO DE EXEMPLO",
+   "fonte": "DADO FICTÍCIO DE EXEMPLO",
+   "oficial": false,
+   "parametros_por_codigo": null,
+   "features": [
+    {
+     "type": "Feature",
+     "properties": {
+      "codigo": "I1"
+     },
+     "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+       [
+        [
+         -33.0,
+         -10.01
+        ],
+        [
+         -32.96,
+         -10.01
+        ],
+        [
+         -32.96,
+         -9.99
+        ],
+        [
+         -33.0,
+         -9.99
+        ],
+        [
+         -33.0,
+         -10.01
+        ]
+       ]
+      ]
+     }
+    }
+   ]
+  }
+ },
+ "outorga_onerosa": {
+  "resumo": "DADO FICTÍCIO DE EXEMPLO",
+  "fonte_id": null,
+  "artigo_anexo": null,
+  "itens": []
+ },
+ "zeis_his": {
+  "resumo": "DADO FICTÍCIO DE EXEMPLO",
+  "fonte_id": null,
+  "artigo_anexo": null,
+  "itens": []
+ },
+ "outros_parametros": {
+  "resumo": "DADO FICTÍCIO DE EXEMPLO",
+  "fonte_id": null,
+  "artigo_anexo": null,
+  "itens": []
+ },
+ "resumo_mcmv": [
+  "DADO FICTÍCIO DE EXEMPLO"
+ ],
+ "geografico": {
+  "descricao": "DADO FICTÍCIO DE EXEMPLO",
+  "crs": "EPSG:4326",
+  "servidor_oficial": null,
+  "camadas": [
+   {
+    "nome": "zonas",
+    "arquivo": "embutido",
+    "fonte_url": "https://example.org",
+    "data_download": "2026-10-27",
+    "oficial": false,
+    "metodo": "inventado para teste",
+    "erro_estimado_m": 0
+   }
+  ],
+  "regras_de_consulta": "Motor genérico (sem crs_area de propósito: a app calcula a UTM pelo centro).",
+  "limitacoes": [
+   "DADO FICTÍCIO DE EXEMPLO"
+  ]
+ },
+ "lacunas": [
+  {
+   "item": "Gabarito",
+   "motivo": "DADO FICTÍCIO: deixado null de propósito para testar a exibição de lacunas."
+  }
+ ]
+}

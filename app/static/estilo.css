@@ -1,0 +1,28 @@
+html, body { height: 100%; margin: 0; font-family: Arial, Helvetica, sans-serif; }
+#mapa { position: absolute; top: 0; bottom: 0; left: 0; right: 460px; }
+#painel { position: absolute; top: 0; bottom: 0; right: 0; width: 460px; overflow-y: auto; padding: 12px 14px;
+          box-sizing: border-box; background: #fafafa; border-left: 1px solid #ccc; font-size: 13px; }
+h2 { margin: 0 0 6px; font-size: 17px; } h3 { margin: 12px 0 4px; font-size: 14px; border-bottom: 1px solid #ddd; }
+h4 { margin: 8px 0 2px; font-size: 13px; }
+.linha { display: flex; gap: 8px; align-items: center; margin: 6px 0; flex-wrap: wrap; }
+.nota { color: #555; font-size: 12px; } .pequeno { font-size: 12px; }
+.zona { font-size: 24px; font-weight: bold; color: #7f0000; }
+table { border-collapse: collapse; width: 100%; } td, th { border-bottom: 1px solid #e3e3e3; padding: 3px 4px; text-align: left; vertical-align: top; }
+.alerta { background: #fff4e5; border-left: 3px solid #e67e00; padding: 4px 6px; margin: 4px 0; font-size: 12px; }
+.alerta.restricao { background: #fde8e8; border-color: #c62828; } .alerta.confirmar { background: #eef3fb; border-color: #3b6db3; }
+.alerta.ficticio { background: #f3e5f5; border-color: #8e24aa; font-weight: bold; }
+.cit { color: #666; font-size: 11px; } form { margin: 8px 0; } button { cursor: pointer; }
+.poligono { border: 1px solid #ccc; border-radius: 4px; margin: 8px 0; background: #fff; }
+.poligono > summary { padding: 6px 8px; cursor: pointer; font-weight: bold; background: #f0f0f0; }
+.poligono > div { padding: 4px 8px 8px; }
+body.doc { max-width: 1100px; margin: 20px auto; padding: 0 16px; font-size: 14px; }
+body.doc table { font-size: 12px; } body.doc th { background: #f0f0f0; } h1.sub { font-size: 18px; }
+blockquote { border-left: 3px solid #3b6db3; margin: 8px 0; padding: 4px 10px; background: #eef3fb; }
+
+#status-cidades { margin: 8px 0; font-size: 12px; }
+#status-cidades summary { cursor: pointer; font-weight: 600; }
+table.status { border-collapse: collapse; width: 100%; margin-top: 4px; }
+table.status th, table.status td { border-bottom: 1px solid #ddd; padding: 2px 4px; text-align: left; }
+table.status td.n { text-align: right; white-space: nowrap; }
+td.q-ok { color: #1a7f37; } td.q-mix { color: #9a6700; } td.q-aprox { color: #b35900; }
+table.status td:first-child { white-space: nowrap; }
